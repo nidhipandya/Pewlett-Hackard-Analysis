@@ -49,3 +49,12 @@ ON e.emp_no = tl.emp_no
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 	  AND (tl.to_date = '9999-01-01')
 ORDER BY e.emp_no asc;
+
+Select * from mentorship_eligibilty
+
+Select count(emp_no) from mentorship_eligibilty
+
+SELECT COUNT(emp_no) as count_emp, title
+FROM mentorship_eligibilty
+Group BY title
+order by count_emp desc;
